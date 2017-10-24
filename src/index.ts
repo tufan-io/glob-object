@@ -24,6 +24,6 @@ const makeGlobbable = {
  * @param {any} obj
  * @returns
  */
-export function GlobObject(regularObject) {
+export function GlobProps(regularObject) {
   return new Proxy(regularObject, makeGlobbable);
 }

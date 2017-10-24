@@ -13,7 +13,7 @@ const makeGlobbable = {
         }, undefined);
     }
 };
-function GlobObject(regularObject) {
+function GlobProps(regularObject) {
     return new Proxy(regularObject, makeGlobbable);
 }
-exports.GlobObject = GlobObject;
+exports.GlobProps = GlobProps;

@@ -1,1 +1,1 @@
-export declare function GlobObject(regularObject: any): any;
+export declare function GlobProps(regularObject: any): any;

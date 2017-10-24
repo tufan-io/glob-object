@@ -1,6 +1,6 @@
 import { test } from 'ava';
 
-import { GlobObject } from '../..';
+import { GlobProps } from '../..';
 
 const expected = {
   'src/index.ts': 'isSrc',
@@ -14,8 +14,8 @@ for (let key in expected) {
     'src/**\/*.*': 'isSrc',
     'dst/**\/*.*': 'isDst'
   };
-  const globObj = GlobObject(regularObj);
-  test(`glob-object ${key}`, async (t) => {
-    t.is(globObj[key], expected[key]);
+  const globber = GlobProps(regularObj);
+  test(`glob-props ${key}`, async (t) => {
+    t.is(globber[key], expected[key]);
   });
 }

@@ -1,5 +1,5 @@
 {
-  "name": "glob-object",
+  "name": "glob-props",
   "version": "0.0.0-development",
   "description": "Allows using glob strings as object keys! ✨",
   "keywords": [
@@ -14,7 +14,7 @@
     "keys"
   ],
   "author": "Shishir Ramam",
-  "repository": "tufan-io/glob-object",
+  "repository": "tufan-io/glob-props",
   "license": "Apache-2.0",
   "private": false,
   "engines": {
