@@ -50,11 +50,13 @@ globObject['non-existant/glob/pattern'] // returns undefined
 
 ## Implementation
 
-`glob-object` creates an [object proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) over `normalObject`, traps the get method and returns the first glob matched string.
+`glob-object` creates an [object proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) over a `regularObject`.
+
+When accessed with a concrete string, the proxied get method performs a glob search, returning the value of the first glob that matches the concrete string.
 
 ## Why
 
-It makes it trivially simple to create a router, mapper or other such functionality.
+`glob-object` makes it trivially simple to create a many-to-one mapper or simple routers.
 The look up is reduced to an object access. And then again, why not?!
 
 ## Development Tooling
